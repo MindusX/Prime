@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site Web</title>
+    <title>Ma Page Web</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,84 +14,59 @@
         header {
             background-color: #333;
             color: white;
-            padding: 20px;
+            padding: 1rem;
             text-align: center;
         }
-        nav {
-            background-color: #444;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
+        main {
+            padding: 2rem;
         }
         .container {
-            padding: 20px;
             max-width: 800px;
-            margin: auto;
+            margin: 0 auto;
         }
-        section {
-            margin-bottom: 30px;
+        h1 {
+            color: #007BFF;
+        }
+        p {
+            margin: 1rem 0;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 1rem;
             position: fixed;
-            bottom: 0;
             width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur Mon Site</h1>
-        <p>Une page d'exemple pour montrer un exemple complet</p>
+        <h1>Bienvenue sur mon site web</h1>
+        <p>Ceci est une page HTML complète</p>
     </header>
 
-    <nav>
-        <a href="#section1">Accueil</a>
-        <a href="#section2">À propos</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="container">
-        <section id="section1">
-            <h2>À propos de nous</h2>
-            <p>Ce site est conçu pour vous offrir des informations utiles et des ressources complètes.</p>
+    <main>
+        <section class="container">
+            <h2>À propos de moi</h2>
+            <p>
+                Je suis un assistant intelligent conçu pour vous aider avec toutes vos questions.
+                Que vous cherchiez des informations, des idées ou des conseils, je suis là pour vous !
+            </p>
         </section>
 
-        <section id="section2">
-            <h2>Nos Services</h2>
-            <ul>
-                <li>Conseils pour le développement web</li>
-                <li>Formation en ligne</li>
-                <li>Conception de sites web</li>
-            </ul>
+        <section class="container">
+            <h2>Mon portfolio</h2>
+            <p>
+                J'ai développé des projets variés, des pages web aux applications interactives.
+                N'hésitez pas à me dire ce qui vous intéresse !
+            </p>
         </section>
-
-        <section id="section3">
-            <h2>Contact</h2>
-            <p>N'hésitez pas à nous contacter si vous avez des questions.</p>
-            <form>
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" required>
-                
-                <label for="email">Email :</label>
-                <input type="email" id="email" required>
-                
-                <label for="message">Message :</label>
-                <textarea id="message" required></textarea>
-                
-                <button type="submit">Envoyer</button>
-            </form>
-        </section>
-    </div>
+    </main>
 
     <footer>
-        <p>&copy; 2023 Mon Site Web. Tous droits réservés.</p>
+        <p>&copy; 2023 Mon Nom. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
