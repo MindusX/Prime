@@ -1,72 +1,19 @@
+<!-- email_app/templates/base.html -->
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Page Web</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        main {
-            padding: 2rem;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        h1 {
-            color: #007BFF;
-        }
-        p {
-            margin: 1rem 0;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>Mon Application</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur mon site web</h1>
-        <p>Ceci est une page HTML complète</p>
+        <h1>Mon Application</h1>
     </header>
-
-    <main>
-        <section class="container">
-            <h2>À propos de moi</h2>
-            <p>
-                Je suis un assistant intelligent conçu pour vous aider avec toutes vos questions.
-                Que vous cherchiez des informations, des idées ou des conseils, je suis là pour vous !
-            </p>
-        </section>
-
-        <section class="container">
-            <h2>Mon portfolio</h2>
-            <p>
-                J'ai développé des projets variés, des pages web aux applications interactives.
-                N'hésitez pas à me dire ce qui vous intéresse !
-            </p>
-        </section>
-    </main>
-
+    {% block content %}{% endblock %}
     <footer>
-        <p>&copy; 2023 Mon Nom. Tous droits réservés.</p>
+        <p>© 2025 Mon Application</p>
     </footer>
 </body>
 </html>
